@@ -20,3 +20,25 @@ h2 {
   font-size: 1.5em;
   color: #f5f5f5;
 }
+
+section {
+  background-color: #1a1a1a; /* gris muy oscuro */
+  padding: 20px;
+  border-left: 5px solid #ffd700; /* línea amarilla tipo Batman */
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+section h3 {
+  color: #ffd700;
+  margin-top: 0;
+}
+
+section p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+section strong {
+  color: #f1c40f; /* amarillo dorado para los títulos */
+}
