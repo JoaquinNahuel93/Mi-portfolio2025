@@ -22,9 +22,9 @@ h2 {
 }
 
 section {
-  background-color: #1a1a1a; /* gris muy oscuro */
+  background-color: #1a1a1a;
   padding: 20px;
-  border-left: 5px solid #ffd700; /* línea amarilla tipo Batman */
+  border-left: 5px solid #ffd700;
   margin-bottom: 30px;
   border-radius: 8px;
 }
@@ -40,5 +40,5 @@ section p {
 }
 
 section strong {
-  color: #f1c40f; /* amarillo dorado para los títulos */
+  color: #f1c40f;
 }
