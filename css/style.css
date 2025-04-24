@@ -42,3 +42,20 @@ section p {
 section strong {
   color: #f1c40f;
 }
+.experiencia-laboral {
+  background-color: #121212;
+  padding: 20px;
+  border-left: 5px solid #f1c40f;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+
+  .experiencia-laboral h3 {
+    color: #ffdf00;
+  }
+
+  .experiencia-laboral li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+}
