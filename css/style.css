@@ -43,19 +43,18 @@ section strong {
   color: #f1c40f;
 }
 .experiencia-laboral {
-  background-color: #121212;
+  background-color: #2b2b1f;
   padding: 20px;
-  border-left: 5px solid #f1c40f;
   margin-bottom: 30px;
+  border-left: 5px solid #ffd700;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
 
-  .experiencia-laboral h3 {
-    color: #ffdf00;
-  }
+.experiencia-laboral h3 {
+  color: #ffd700;
+}
 
-  .experiencia-laboral li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
+.experiencia-laboral p,
+.experiencia-laboral li {
+  color: #f5f5f5;
 }
