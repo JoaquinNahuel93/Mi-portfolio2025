@@ -88,3 +88,13 @@ section strong {
   margin: 10px 0;
   color: #f0f0f0;
 }
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
