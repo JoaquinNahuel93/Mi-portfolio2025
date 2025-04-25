@@ -140,3 +140,23 @@ nav a:hover {
 .enlace-formacion a:hover {
   text-decoration: underline;
 }
+
+.contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.imagen img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.3);
+}
+
+.texto {
+  flex: 1;
+}
