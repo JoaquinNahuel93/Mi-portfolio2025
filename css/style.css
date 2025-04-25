@@ -125,3 +125,18 @@ nav a:hover {
 .cursos strong {
   color: #f1c40f;
 }
+.enlace-formacion {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.enlace-formacion a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.enlace-formacion a:hover {
+  text-decoration: underline;
+}
