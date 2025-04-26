@@ -130,17 +130,6 @@ nav a:hover {
   text-align: center;
 }
 
-.enlace-formacion a {
-  color: #ffd700;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.enlace-formacion a:hover {
-  text-decoration: underline;
-}
-
 .contenido {
   display: flex;
   align-items: center;
@@ -159,4 +148,24 @@ nav a:hover {
 
 .texto {
   flex: 1;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #fa994b;
+  color: #000;
+}
+.enlace-formacion {
+  margin-top: 10px;
+  text-align: center;
 }
