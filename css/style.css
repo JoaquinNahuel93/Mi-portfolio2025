@@ -19,7 +19,8 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  color: #f5f5f5;
+  color: #cccccc;
+  font-weight: normal;
 }
 
 section {
@@ -28,6 +29,7 @@ section {
   border-left: 5px solid #ffd700;
   margin-bottom: 30px;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 section h3 {
@@ -35,99 +37,14 @@ section h3 {
   margin-top: 0;
 }
 
-section p {
+section p,
+section li {
   margin: 8px 0;
   font-size: 1rem;
 }
 
-section strong {
+strong {
   color: #f1c40f;
-}
-.experiencia-laboral {
-  background-color: #2b2b1f;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-left: 5px solid #ffd700;
-  border-radius: 8px;
-}
-
-.experiencia-laboral h3 {
-  color: #ffd700;
-}
-
-.experiencia-laboral p,
-.experiencia-laboral li {
-  color: #f5f5f5;
-}
-.formacion-academica {
-  background-color: #2c2c2c;
-  border-left: 5px solid #f1c40f;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.formacion-academica h3 {
-  color: #ffd700;
-  margin-top: 0;
-}
-.experiencia-relevante {
-  background-color: #262626;
-  border-left: 5px solid #f1c40f;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.experiencia-relevante h3 {
-  color: #f9d923;
-  margin-top: 0;
-}
-
-.experiencia-relevante li {
-  margin: 10px 0;
-  color: #f0f0f0;
-}
-nav a {
-  color: #ffd700;
-  text-decoration: none;
-  margin-right: 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-.cursos {
-  background-color: #1f1f1f;
-  border-left: 5px solid #f5c518;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-.cursos h3 {
-  color: #ffd700;
-}
-
-.cursos ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.cursos li {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333;
-  color: #f5f5f5;
-}
-
-.cursos strong {
-  color: #f1c40f;
-}
-.enlace-formacion {
-  margin-top: 10px;
-  text-align: center;
 }
 
 .contenido {
@@ -135,37 +52,84 @@ nav a:hover {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .imagen img {
   width: 180px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20%;
-  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.3);
+  height: 180px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .texto {
   flex: 1;
 }
-.btn {
+
+.btn,
+button.btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #ffd700;
   color: #0d0d0d;
   text-decoration: none;
   font-weight: bold;
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 5px;
 }
 
-.btn:hover {
-  background-color: #fa994b;
+.btn:hover,
+button.btn:hover {
+  background-color: #f1710f;
   color: #000;
 }
-.enlace-formacion {
-  margin-top: 10px;
-  text-align: center;
+
+.botones {
+  position: relative;
+  display: inline-block;
+}
+
+#listaContacto {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.lista-contacto a {
+  color: #f5f5f5;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.lista-contacto a:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen img {
+    width: 150px;
+    height: 150px;
+  }
 }

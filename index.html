@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,22 +17,25 @@
           />
         </div>
         <div class="texto">
-          <h1>Hola, soy <span class="amarillo">Joaquin Nahuel Gonzalez</span></h1>
+          <h1>
+            Hola, soy <span class="amarillo">Joaquin Nahuel Gonzalez</span>
+          </h1>
           <h2>Programador</h2>
           <div class="enlace-formacion">
             <a href="formacion.html" class="btn">Formación y Cursos</a>
           </div>
-          
           <p>
             Desarrollador apasionado por el software y la tecnología. Estudiante
             en constante aprendizaje.
           </p>
           <div class="botones">
-            <a href="#contacto" class="btn">Contactarme</a>
-            <a href="#proyectos" class="btn btn-secundario">Ver proyectos</a>
+            <button onclick="toggleContacto()" class="btn">Contactarme</button>
+            <div id="listaContacto" class="lista-contacto">
+              <a href="https://wa.me/3804447520" target="_blank">WhatsApp</a>
+              <a href="mailto:joaquinnahuel1993@gmail.com">Email</a>
+            </div>
+            <a href="#proyectos" class="btn">Ver proyectos</a>
           </div>
-        </div>
-      </div>
         </div>
       </div>
     </header>
@@ -89,17 +92,15 @@
       <h3>Formación Académica</h3>
       <ul>
         <li>
-          Estudiante de Tecnicatura Universitaria en Programación - UTN <br />
+          Estudiante de Tecnicatura Universitaria en Programación - UTN
           (actualmente cursando 2do año)
         </li>
         <li>
-          Técnico en equipos e instalaciones electromecánicas <br />
-          Título obtenido en Colegio Secundario EPET Nº2 Brigadier Gral. Juan
-          Facundo Quiroga - Egresado en año 2010
+          Técnico en equipos e instalaciones electromecánicas - EPET Nº2
+          Brigadier Gral. Juan Facundo Quiroga (Egresado 2010)
         </li>
         <li>
-          Licenciatura en Sistemas de Información <br />
-          (cursado incompleto 2do año)
+          Licenciatura en Sistemas de Información (cursado incompleto 2do año)
         </li>
       </ul>
     </section>
@@ -107,16 +108,14 @@
       <h3>Experiencia Relevante</h3>
       <ul>
         <li>
-          En cuanto al manejo de tecnologías, he desarrollado un pequeño
-          programa utilizando el lenguaje Python y utilizando la herramienta
-          PyQt6, para la compra y venta de boletos de un cine.
+          Desarrollo de programa en Python y PyQt6 para gestión de boletos de
+          cine.
         </li>
         <li>
-          Actualmente me estoy especializando en el desarrollo de aplicaciones y
-          sitios web utilizando HTML, CSS y JavaScript, así como en la creación
-          de interfaces dinámicas y responsivas con React.
+          Especialización en desarrollo web con HTML, CSS, JavaScript y React.
         </li>
       </ul>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
