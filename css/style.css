@@ -147,15 +147,17 @@ button.btn:hover {
   top: 100%;
   left: 0;
   background-color: #333;
-  min-width: 150px;
+  min-width: 0px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
-  padding: 5px 0;
+  padding: 5px 0px;
   margin-top: 5px;
 }
 
 .lista-contacto a {
+  width: 100px;
+  height: 120px;
   color: #f5f5f5;
   padding: 8px 12px;
   text-decoration: none;

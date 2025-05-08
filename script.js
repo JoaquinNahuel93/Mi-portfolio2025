@@ -34,7 +34,7 @@ window.onclick = function (event) {
 };
 document.getElementById("habilidad-js").addEventListener("click", function () {
   const contadorContainer = document.getElementById("contador-container");
-  contadorContainer.style.display = "block"; // Mostrar el contador al hacer clic
+  contadorContainer.style.display = "block";
 });
 
 document.getElementById("incrementar").addEventListener("click", function () {
