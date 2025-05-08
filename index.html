@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Mi Portfolio</title>
   </head>
   <body>
@@ -16,37 +20,104 @@
             class="imagen-perfil"
           />
         </div>
-        <div class="texto">
-          <h1>
-            Hola, soy <span class="amarillo">Joaquin Nahuel Gonzalez</span>
-          </h1>
-          <h2>Programador</h2>
-          <div class="enlace-formacion">
-            <a href="formacion.html" class="btn">Formación y Cursos</a>
+      </div>
+      <div class="texto">
+        <h1>Hola, soy <span class="amarillo">Gonzalez Joaquin Nahuel</span></h1>
+        <br />
+        <h2><strong>Programador</strong></h2>
+        <br />
+        <div class="enlace-formacion">
+          <a href="formacion.html" class="btn">Formación y Cursos</a>
+        </div>
+        <br />
+        <p>
+          Desarrollador apasionado por el software y la tecnología. Estudiante
+          en constante aprendizaje.
+        </p>
+        <br />
+        <div class="botones">
+          <button onclick="toggleContacto()" class="btn-contactarme">
+            Contactarme
+          </button>
+          <div id="listaContacto" class="lista-contacto">
+            <a href="https://wa.me/3804447520" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                class="icono-contacto"
+              />
+              WhatsApp
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=joaquinnahuel1993@gmail.com"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+                alt="Gmail"
+                class="icono-contacto"
+              />
+              Email
+            </a>
           </div>
-          <p>
-            Desarrollador apasionado por el software y la tecnología. Estudiante
-            en constante aprendizaje.
-          </p>
-          <div class="botones">
-            <button onclick="toggleContacto()" class="btn">Contactarme</button>
-            <div id="listaContacto" class="lista-contacto">
-              <a href="https://wa.me/3804447520" target="_blank">WhatsApp</a>
-              <a href="mailto:joaquinnahuel1993@gmail.com">Email</a>
-            </div>
-            <a href="#proyectos" class="btn">Ver proyectos</a>
+        </div>
+        <button id="abrirModal" class="btn2">Ver Proyectos</button>
+        <div id="modalProyecto" class="modal">
+          <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2 style="color: rgb(255, 255, 255); font-weight: bolder">
+              Detalles del Proyecto
+            </h2>
+            <p>
+              <strong>Sistema de Gestión de Boletos de Cine (POO)</strong>
+              <br /><strong>Objetivo del Proyecto:</strong> Este proyecto es una
+              aplicación de escritorio desarrollada en Python y PyQt6 para la
+              gestión de boletos de cine. El sistema permite a los usuarios
+              seleccionar funciones, asientos y pagar boletos de manera sencilla
+              y eficiente. Se ha desarrollado utilizando los principios de
+              Programación Orientada a Objetos (POO), lo que permite una mayor
+              modularidad, reutilización del código y mantenimiento a largo
+              plazo. Características Principales: Selección de Función: Los
+              usuarios pueden elegir entre múltiples funciones de cine
+              disponibles en un horario determinado. Selección de Asientos: El
+              sistema permite a los usuarios seleccionar asientos específicos
+              dentro de la sala de cine. Visualización de Detalles: Muestra
+              información detallada sobre la película, incluyendo título,
+              duración, clasificación y resumen. Procesamiento de Pagos: Permite
+              realizar pagos de manera virtual, confirmando la compra de los
+              boletos seleccionados. Interfaz Gráfica Intuitiva: Desarrollada
+              con PyQt6, la interfaz es sencilla y fácil de navegar, con
+              botones, menús desplegables y alertas visuales claras.
+              <br /><strong
+                >Uso de Programación Orientada a Objetos (POO):</strong
+              >
+              El proyecto fue estructurado bajo los principios de la POO, lo que
+              mejora la organización del código y facilita su mantenimiento y
+              expansión. Se crearon clases para representar las distintas
+              entidades del sistema (por ejemplo, Película, Boleto, Sala,
+              Usuario), y estas clases gestionan tanto los datos como el
+              comportamiento asociado a cada entidad. Esto permitió:
+              Encapsulamiento: Las clases contienen los atributos y métodos
+              relacionados, evitando la exposición innecesaria de datos.
+              Herencia: Se utilizó para crear nuevas clases basadas en otras,
+              permitiendo la reutilización de código y mejorando la
+              extensibilidad del sistema. Polimorfismo: Permite que diferentes
+              clases implementen comportamientos similares de manera flexible,
+              sin modificar el código base. Abstracción: Se simplificaron las
+              interacciones del usuario con el sistema, ocultando detalles
+              complejos y presentando solo la funcionalidad esencial.
+            </p>
           </div>
         </div>
       </div>
     </header>
-    <section>
+    <section class="revelar">
       <h3>Datos Personales</h3>
       <p><strong>Lugar de nacimiento:</strong> La Rioja - Argentina</p>
       <p><strong>Telefono:</strong> 3804447520</p>
       <p><strong>Email:</strong> joaquinnahuel1993@gmail.com</p>
       <p><strong>DNI:</strong> 37.187.435</p>
     </section>
-    <section>
+    <section class="revelar">
       <h3>Habilidades</h3>
       <ul>
         <li>Conocimiento en manejo e instalaciones de Software</li>
@@ -66,7 +137,7 @@
         <li>Coordinación</li>
       </ul>
     </section>
-    <section class="experiencia-laboral">
+    <section class="experiencia-laboral revelar">
       <h3>Experiencia Laboral</h3>
       <p>
         <strong
@@ -88,7 +159,7 @@
         <li>Conocimiento detallado de barrios de La Rioja Capital.</li>
       </ul>
     </section>
-    <section class="formacion-academica">
+    <section class="formacion-academica revelar">
       <h3>Formación Académica</h3>
       <ul>
         <li>
@@ -104,7 +175,7 @@
         </li>
       </ul>
     </section>
-    <section class="experiencia-relevante">
+    <section class="experiencia-relevante revelar">
       <h3>Experiencia Relevante</h3>
       <ul>
         <li>
@@ -112,10 +183,27 @@
           cine.
         </li>
         <li>
-          Especialización en desarrollo web con HTML, CSS, JavaScript y React.
+          Especialización en desarrollo web con HTML, CSS,
+          <span id="habilidad-js" style="cursor: pointer">
+            <strong>JavaScript</strong>
+            <i class="fas fa-hand-point-up"></i>
+          </span>
+          <div id="contador-container" class="contador-container">
+            <button id="decrementar" class="contador-btn">-</button>
+            <span id="contador" class="contador">0</span>
+            <button id="incrementar" class="contador-btn">+</button>
+          </div>
         </li>
       </ul>
     </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 Gonzalez Joaquin Nahuel. Todos los derechos reservados.</p>
+      <p>
+        Iconos de WhatsApp y Gmail obtenidos de Wikimedia Commons bajo la
+        licencia Creative Commons.
+      </p>
+    </footer>
   </body>
 </html>
